@@ -115,5 +115,32 @@ p {
 }
 
 #info {
-  float: right;
+  float: left;
+  margin-left: 200px;
+}
+
+#info p {
+  color: black;
+}
+
+hr {
+  background-color: #e5e5e5;
+  height: 1px;
+  border: 0;
+  width: 130px;
+}
+
+a {
+  color: black;
+}
+
+#left {
+  color: #74c78a !important;
+  font-size: 2rem;
+  margin-top: -10px;
+  margin-bottom: -5px;
+}
+
+#when {
+  margin-top: -15px;
 }
