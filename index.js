@@ -17,9 +17,12 @@ function timer2() {
   var now = new Date().getTime();
   var distance = now;
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
   document.getElementById("when").innerHTML =
-    "Today " + (hours + 1) + ":" + mins;
+    "Today " + (hours + 1) + ":" + minutes;
 }
 
 timer2();
